@@ -1,0 +1,73 @@
+/* Kamizar — estilos próprios da loja (mantém styles.css/Bootstrap como base) */
+
+body {
+  background-color: #111;
+  color: #eee;
+}
+
+/* Header / nav */
+.kamizar-navbar {
+  background-color: #000;
+}
+.kamizar-navbar .navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+/* Hero banner */
+.shop-hero {
+  position: relative;
+  min-height: 46vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+.shop-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+.shop-hero .shop-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem 1rem;
+}
+.shop-hero h1 {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* Product cards */
+.product-card {
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  color: #eee;
+}
+.product-card .card-img-top {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.product-card .btn-outline-dark {
+  color: #eee;
+  border-color: #eee;
+}
+.product-card .btn-outline-dark:hover {
+  background-color: #eee;
+  color: #111;
+}
+
+/* Footer */
+.kamizar-footer {
+  background-color: #000;
+}
+.kamizar-footer a {
+  color: #ccc;
+}
+.kamizar-footer a:hover {
+  color: #fff;
+}

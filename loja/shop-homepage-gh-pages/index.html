@@ -1,261 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="E-commerce" content="Kamizar" />
-        <meta name="matheus-vinicius" content="Softwer engenner"/>
-        <title> Kamizar </title>
+        <meta name="description" content="Loja Kamizar Alfaiataria — ternos, camisas e peças sob medida em Caieiras - SP." />
+        <title>Loja Kamizar</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Estilos próprios Kamizar -->
+        <link href="css/kamizar-shop.css" rel="stylesheet" />
     </head>
     <body>
-        <!-- Header-->
-      <header>
-        <img class="card-img-toP align-items-center" src="assets/favicon.ico" >
-               <!-- video -->
-                   <div class="video-background-container">
-                          <video playsinline autoplay muted loop id="myVideo">
-                                 <source src="assets/favicon.ico" type="video/mp4">
-                             </video>
-                      </div>
-                   <!-- Navigation-->
-                <nav class="navbar navbar-expand-lg navbar-light bg-black">
-                    <div class="container px-25 px-lg-25 bg-black">
-                        <a class="navbar-brand text-white " href="#!">KAMIZAR </a>
-                        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon  text-white"></span></button>
-                        <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 text-white">
-                                <li class="nav-item text-white"><a class="nav-link active text-white" aria-current="page" href="#!">Home</a></li>
-                                <li class="nav-item text-white"><a class="nav-link  text-white" href="#!">About</a></li>
-                                <li class="nav-item dropdown text-black">
-                                    <a class="nav-link dropdown-toggle  text-white" id="navbarDropdown " href="#" role="button " data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                                    <ul class="dropdown-menu  text-black" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item text-white" href="#!">All Products</a></li>
-                                        <li><hr class="dropdown-divider text-white" /></li>
-                                        <li><a class="dropdown-item text-white" href="#!">Popular Items</a></li>
-                                        <li><a class="dropdown-item text-white"  href="#!">New Arrivals</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-        <!-- Section-->
-        <section class="py-5, bg-black">
-            <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-centerv bg-black">
+        <!-- Header / Navegação -->
+        <nav class="navbar navbar-expand-lg navbar-dark kamizar-navbar">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="../../index.html#hero">KAMIZAR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link" href="../../index.html#hero">Site Kamizar</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../index.html#menu">Tecidos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../index.html#book-a-table">Orçamento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../index.html#contact">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero da loja -->
+        <!-- TODO: substituir por foto real da vitrine/ateliê Kamizar -->
+        <header class="shop-hero" style="background-image: url('https://picsum.photos/seed/loja-kamizar-hero/1600/700');">
+            <div class="shop-hero-content">
+                <h1 class="display-5">Loja Kamizar</h1>
+                <p class="lead mb-4">Peças sob medida, direto do ateliê para você.</p>
+                <a class="btn btn-light btn-lg" href="#produtos">Ver Produtos</a>
+            </div>
+        </header>
+
+        <!-- Produtos -->
+        <section id="produtos" class="py-5" style="background-color:#111;">
+            <div class="container px-4 px-lg-5 mt-3">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder text-white">Nossas Peças</h2>
+                    <p class="text-white-50">Cada peça é feita sob medida — o preço é definido na consulta.</p>
+                </div>
+                <!-- TODO: substituir as imagens abaixo por fotos reais de peças confeccionadas -->
+                <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-sm-2 row-cols-xl-3 justify-content-center">
+
                     <div class="col mb-5">
-                        <div class="card h-100 bg-black">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4 bg-black">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Fancy Product</h5>
-                                    <!-- Product price-->
-                                    $40.00 - $80.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent bg-black">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5,  bg-black ">
-                        <div class="card h-100 bg-black">
-                            <!-- Sale badge-->
-                            <div class="badge  bg-black position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top " src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4 bg-black">
-                                <div class="text-center bg-black">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Special Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$20.00</span>
-                                    $18.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100 bg-black">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
+                        <div class="card product-card h-100">
+                            <img class="card-img-top" src="https://picsum.photos/seed/loja-ternos/500/380" alt="Ternos Sob Medida" />
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Sale Item</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$50.00</span>
-                                    $25.00
+                                    <h5 class="fw-bolder">Ternos Sob Medida</h5>
+                                    <p class="small mb-0">Corte impecável para o dia a dia ou ocasiões especiais.</p>
                                 </div>
                             </div>
-                            <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="../../index.html#book-a-table">Solicitar Orçamento</a></div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col mb-5">
-                        <div class="card h-100 bg-black">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
+                        <div class="card product-card h-100">
+                            <img class="card-img-top" src="https://picsum.photos/seed/loja-camisas/500/380" alt="Camisas Sob Medida" />
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Popular Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    $40.00
+                                    <h5 class="fw-bolder">Camisas Sob Medida</h5>
+                                    <p class="small mb-0">Modelagem exclusiva, tecidos selecionados.</p>
                                 </div>
                             </div>
-                            <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="../../index.html#book-a-table">Solicitar Orçamento</a></div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col mb-5">
-                        <div class="card h-100 bg-black">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
+                        <div class="card product-card h-100">
+                            <img class="card-img-top" src="https://picsum.photos/seed/loja-blazers/500/380" alt="Blazers" />
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Sale Item</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$50.00</span>
-                                    $25.00
+                                    <h5 class="fw-bolder">Blazers</h5>
+                                    <p class="small mb-0">Versatilidade entre o casual e o formal.</p>
                                 </div>
                             </div>
-                            <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="../../index.html#book-a-table">Solicitar Orçamento</a></div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col mb-5">
-                        <div class="card h-100 bg-black">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
+                        <div class="card product-card h-100">
+                            <img class="card-img-top" src="https://picsum.photos/seed/loja-coletes/500/380" alt="Coletes" />
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Fancy Product</h5>
-                                    <!-- Product price-->
-                                    $120.00 - $280.00
+                                    <h5 class="fw-bolder">Coletes</h5>
+                                    <p class="small mb-0">O detalhe que completa o visual clássico.</p>
                                 </div>
                             </div>
-                            <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="../../index.html#book-a-table">Solicitar Orçamento</a></div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col mb-5">
-                        <div class="card h-100 bg-black">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
+                        <div class="card product-card h-100">
+                            <img class="card-img-top" src="https://picsum.photos/seed/loja-calcas/500/380" alt="Calças de Alfaiataria" />
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Special Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$20.00</span>
-                                    $18.00
+                                    <h5 class="fw-bolder">Calças de Alfaiataria</h5>
+                                    <p class="small mb-0">Caimento perfeito, conforto no dia a dia.</p>
                                 </div>
                             </div>
-                            <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="../../index.html#book-a-table">Solicitar Orçamento</a></div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col mb-5">
-                        <div class="card h-100 bg-black">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
+                        <div class="card product-card h-100">
+                            <img class="card-img-top" src="https://picsum.photos/seed/loja-acessorios/500/380" alt="Acessórios" />
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Popular Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    $40.00
+                                    <h5 class="fw-bolder">Acessórios</h5>
+                                    <p class="small mb-0">Gravatas, lenços e botões para fechar o look.</p>
                                 </div>
                             </div>
-                            <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="../../index.html#book-a-table">Solicitar Orçamento</a></div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
+
         <!-- Footer-->
-        <footer class="py-5 bg-black">
-            <div class="container bg-black"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+        <footer class="py-5 kamizar-footer">
+            <div class="container text-center">
+                <p class="m-0 text-white-50">
+                    <a href="../../index.html#hero">kamizar.com.br</a> ·
+                    Av. Dos Estudantes, 198, Caieiras - SP ·
+                    (19) 97408-6253
+                </p>
+                <p class="m-0 mt-2 text-white-50">Copyright &copy; Kamizar Alfaiataria 2026</p>
+            </div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-    </header>
     </body>
 </html>
