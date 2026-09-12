@@ -211,10 +211,17 @@ h6 {
 
 #header .logo a {
   color: var(--kamizar-text-on-wood);
+  display: inline-flex;
+  align-items: center;
 }
 
 #header .logo img {
   max-height: 40px;
+}
+
+#header .logo .logo-mark {
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 /*--------------------------------------------------------------
