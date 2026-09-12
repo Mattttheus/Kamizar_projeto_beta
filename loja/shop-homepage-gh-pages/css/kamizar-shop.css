@@ -1,17 +1,26 @@
 /* Kamizar — estilos próprios da loja (mantém styles.css/Bootstrap como base) */
+/* Paleta: marfim/off-white + madeira rústica e elegante (assets/css/kamizar-palette.css) */
 
 body {
-  background-color: #111;
-  color: #eee;
+  background-color: var(--kamizar-ivory);
+  color: var(--kamizar-text-body);
 }
 
-/* Header / nav */
+/* Header / nav — faixa de madeira escura, como no site institucional */
 .kamizar-navbar {
-  background-color: #000;
+  background-color: var(--kamizar-wood-darkest);
 }
 .kamizar-navbar .navbar-brand {
   font-weight: 700;
   letter-spacing: 0.08em;
+  color: var(--kamizar-text-on-wood);
+}
+.kamizar-navbar .nav-link {
+  color: var(--kamizar-text-on-wood-muted);
+}
+.kamizar-navbar .nav-link:hover,
+.kamizar-navbar .nav-link.active {
+  color: var(--kamizar-wood-pale);
 }
 
 /* Hero banner */
@@ -22,7 +31,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #fff;
+  color: var(--kamizar-text-on-wood);
   background-size: cover;
   background-position: center;
 }
@@ -30,7 +39,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(36, 24, 17, 0.6);
 }
 .shop-hero .shop-hero-content {
   position: relative;
@@ -40,34 +49,60 @@ body {
 .shop-hero h1 {
   font-weight: 700;
   letter-spacing: 0.05em;
+  color: var(--kamizar-text-on-wood);
+}
+.shop-hero .btn-light {
+  background-color: var(--kamizar-wood-pale);
+  border-color: var(--kamizar-wood-pale);
+  color: var(--kamizar-wood-darkest);
+}
+.shop-hero .btn-light:hover {
+  background-color: var(--kamizar-wood-pale-hover);
+  border-color: var(--kamizar-wood-pale-hover);
+  color: var(--kamizar-wood-darkest);
+}
+
+/* Seção de produtos */
+.shop-products {
+  background-color: var(--kamizar-ivory);
+}
+.shop-products h2 {
+  color: var(--kamizar-text-dark);
+}
+.shop-products .text-muted-wood {
+  color: var(--kamizar-text-muted);
 }
 
 /* Product cards */
 .product-card {
-  background-color: #1a1a1a;
-  border: 1px solid #2a2a2a;
-  color: #eee;
+  background-color: var(--kamizar-card);
+  border: 1px solid var(--kamizar-border-ivory);
+  color: var(--kamizar-text-body);
+}
+.product-card h5 {
+  color: var(--kamizar-text-dark);
 }
 .product-card .card-img-top {
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
 .product-card .btn-outline-dark {
-  color: #eee;
-  border-color: #eee;
+  color: var(--kamizar-wood);
+  border-color: var(--kamizar-wood);
 }
 .product-card .btn-outline-dark:hover {
-  background-color: #eee;
-  color: #111;
+  background-color: var(--kamizar-wood);
+  border-color: var(--kamizar-wood);
+  color: var(--kamizar-text-on-wood);
 }
 
-/* Footer */
+/* Footer — mesma faixa de madeira escura do header */
 .kamizar-footer {
-  background-color: #000;
+  background-color: var(--kamizar-wood-darkest);
 }
 .kamizar-footer a {
-  color: #ccc;
+  color: var(--kamizar-text-on-wood-muted);
 }
 .kamizar-footer a:hover {
-  color: #fff;
+  color: var(--kamizar-wood-pale);
 }

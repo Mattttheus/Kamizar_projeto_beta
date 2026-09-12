@@ -1,0 +1,112 @@
+/* Kamizar — reskin do blog (Clean Blog / Start Bootstrap) para a paleta
+   marfim/off-white + madeira rústica e elegante do ecossistema Kamizar.
+   Carregado depois de css/styles.css: só sobrescreve o que muda. */
+
+/* Retoma as variáveis do Bootstrap 5 usadas em todo o styles.css
+   (botões, badges, links, bordas) — atualiza tudo de uma vez. */
+:root {
+  --bs-body-bg: var(--kamizar-ivory);
+  --bs-body-bg-rgb: 247, 241, 228;
+  --bs-body-color: var(--kamizar-text-body);
+  --bs-body-color-rgb: 74, 59, 46;
+  --bs-border-color: var(--kamizar-border-ivory);
+  --bs-primary: var(--kamizar-wood);
+  --bs-primary-rgb: 107, 66, 38;
+  --bs-link-color: var(--kamizar-text-dark);
+  --bs-link-color-rgb: 43, 33, 24;
+  --bs-link-hover-color: var(--kamizar-wood-dark);
+  --bs-link-hover-color-rgb: 59, 40, 24;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--kamizar-text-dark);
+}
+
+/* Navegação — faixa de madeira escura, como no site institucional e na loja */
+#mainNav {
+  border-bottom: 1px solid var(--kamizar-border-ivory);
+  background-color: var(--kamizar-ivory);
+}
+@media (min-width: 992px) {
+  #mainNav {
+    border-bottom: 1px solid transparent;
+    background: transparent;
+  }
+  #mainNav .navbar-brand,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link {
+    color: var(--kamizar-text-on-wood);
+  }
+  #mainNav .navbar-brand:focus,
+  #mainNav .navbar-brand:hover,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
+    color: var(--kamizar-wood-pale);
+  }
+  #mainNav.is-fixed {
+    border-bottom: 1px solid var(--kamizar-border-ivory);
+    background-color: rgba(247, 241, 228, 0.95);
+  }
+  #mainNav.is-fixed .navbar-brand,
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a {
+    color: var(--kamizar-text-dark);
+  }
+  #mainNav.is-fixed .navbar-brand:focus,
+  #mainNav.is-fixed .navbar-brand:hover,
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus,
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
+    color: var(--kamizar-wood);
+  }
+}
+
+/* Cabeçalho / capa das páginas — mesma faixa de madeira do hero institucional */
+header.masthead {
+  background-color: var(--kamizar-wood-darkest);
+  background-image: linear-gradient(135deg, var(--kamizar-wood-darkest) 0%, var(--kamizar-wood-dark) 55%, var(--kamizar-wood) 100%);
+}
+header.masthead:before {
+  background-color: var(--kamizar-wood-darkest);
+  opacity: 0.25;
+}
+header.masthead .page-heading,
+header.masthead .post-heading,
+header.masthead .site-heading,
+header.masthead .post-heading .meta a {
+  color: var(--kamizar-text-on-wood);
+}
+
+/* Posts */
+.post-preview > a {
+  color: var(--kamizar-text-dark);
+}
+.post-preview > a:focus,
+.post-preview > a:hover {
+  color: var(--kamizar-wood);
+}
+.post-preview > .post-meta {
+  color: var(--kamizar-text-muted);
+}
+.post-preview > .post-meta > a {
+  color: var(--kamizar-wood);
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--kamizar-wood-darkest);
+  color: var(--kamizar-text-on-wood);
+}
+footer a {
+  color: var(--kamizar-text-on-wood-muted);
+}
+footer a:hover {
+  color: var(--kamizar-wood-pale);
+}
+footer .text-muted {
+  color: var(--kamizar-text-on-wood-muted) !important;
+}
+footer .fa-stack .fa-circle {
+  color: var(--kamizar-wood-dark);
+  transition: color 0.2s;
+}
+footer .list-inline-item a:hover .fa-stack .fa-circle {
+  color: var(--kamizar-wood-pale);
+}

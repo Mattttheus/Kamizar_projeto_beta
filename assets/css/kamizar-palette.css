@@ -1,0 +1,30 @@
+/*
+ * Paleta Kamizar — marfim/off-white + madeira rústica e elegante
+ * Usada pelo site institucional, pela loja e pelo blog para manter
+ * a mesma identidade visual em todo o ecossistema.
+ */
+:root {
+  /* Fundos claros (marfim / off-white) */
+  --kamizar-ivory: #F7F1E4;
+  --kamizar-ivory-alt: #EFE4CE;
+  --kamizar-card: #FFFFFF;
+
+  /* Madeira (acentos, botões, faixas escuras de destaque) */
+  --kamizar-wood-darkest: #241811;
+  --kamizar-wood-dark: #3B2818;
+  --kamizar-wood: #6B4226;
+  --kamizar-wood-light: #9C6B3E;
+  --kamizar-wood-pale: #C9A574;
+  --kamizar-wood-pale-hover: #DCC29C;
+
+  /* Texto */
+  --kamizar-text-dark: #2B2118;
+  --kamizar-text-body: #4A3B2E;
+  --kamizar-text-muted: #8A7863;
+  --kamizar-text-on-wood: #F3E9D8;
+  --kamizar-text-on-wood-muted: rgba(243, 233, 216, 0.65);
+
+  /* Bordas e divisores */
+  --kamizar-border-ivory: #E0D3B0;
+  --kamizar-border-wood: #4A3324;
+}
