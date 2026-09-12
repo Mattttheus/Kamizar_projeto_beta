@@ -58,20 +58,32 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Cabeçalho / capa das páginas — mesma faixa de madeira do hero institucional */
+/* Cabeçalho / capa das páginas — foto real (definida inline em cada página)
+   com véu de madeira translúcido por cima, igual ao hero institucional e
+   ao hero da loja. Se a foto inline falhar, cai neste degradê de madeira. */
 header.masthead {
   background-color: var(--kamizar-wood-darkest);
   background-image: linear-gradient(135deg, var(--kamizar-wood-darkest) 0%, var(--kamizar-wood-dark) 55%, var(--kamizar-wood) 100%);
 }
 header.masthead:before {
-  background-color: var(--kamizar-wood-darkest);
-  opacity: 0.25;
+  background: linear-gradient(115deg, rgba(36, 24, 17, 0.88) 0%, rgba(36, 24, 17, 0.68) 45%, rgba(59, 40, 24, 0.4) 100%);
+  opacity: 1;
 }
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading,
 header.masthead .post-heading .meta a {
   color: var(--kamizar-text-on-wood);
+}
+
+/* Selo "Em breve" nos posts ainda não escritos */
+.badge-em-breve {
+  background-color: var(--kamizar-ivory-alt);
+  color: var(--kamizar-text-muted);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  vertical-align: middle;
 }
 
 /* Posts */

@@ -236,6 +236,7 @@ h6 {
 .book-a-table-btn:hover {
   background: var(--kamizar-wood-pale);
   color: var(--kamizar-wood-darkest);
+  box-shadow: 0 6px 16px rgba(36, 24, 17, 0.35);
 }
 
 @media (max-width: 992px) {
@@ -474,18 +475,22 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+/* Foto de banco (Pexels), temática de alfaiataria — trocar pela foto real do ateliê/vitrine quando disponível */
 #hero {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(135deg, var(--kamizar-wood-darkest) 0%, var(--kamizar-wood-dark) 55%, var(--kamizar-wood) 100%);
+  background-image: url("https://images.pexels.com/photos/5830661/pexels-photo-5830661.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop");
+  background-color: var(--kamizar-wood-darkest);
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
   padding: 0;
 }
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.15);
+  background: linear-gradient(115deg, rgba(36, 24, 17, 0.92) 0%, rgba(36, 24, 17, 0.72) 45%, rgba(59, 40, 24, 0.45) 100%);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -559,6 +564,7 @@ h6 {
   display: block;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
 #hero .play-btn::after {
