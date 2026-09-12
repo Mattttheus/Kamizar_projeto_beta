@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .bg-body{
 
-  background-color: #000;
+  background-color: var(--bs-body-bg);
 }
 :root {
   --bs-blue: #0d6efd;
@@ -76,7 +76,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  background-color: #000;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -105,7 +104,6 @@ hr {
   border: 0;
   border-top: 1px solid;
   opacity: 0.25;
-  background-color: #000;
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
